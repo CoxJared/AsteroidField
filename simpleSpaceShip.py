@@ -80,6 +80,9 @@ cubeCoords = (0, 0, 0) #(2, 2, 2), (2, 2, -2), (2, -2, -2), (-2, 2, -2), (2, -2,
 
 obj= Ship((0,0,0))# [Ship((x, y, z)) for x, y, z in cubeCoords]
 
+
+print("a,d,w,s,q,e movement\nh,j,k,l rotation\n esc to exit")
+
 while True:
 
     dt = clock.tick()/1000
