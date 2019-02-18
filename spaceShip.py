@@ -25,19 +25,20 @@ class Ship:
         self.rotation = list(rotation)
 
     def update(self, dt, key):
-        s = dt*10
+        s = dt*5
 
+        #x-direct
         if key[pygame.K_w]:
             self.x += s
         if key[pygame.K_s]:
             self.x -= s
 
-            # y Direct
+        # y-direct
         if (key[pygame.K_a]):
             self.y += s
         if (key[pygame.K_d]):
             self.y -= s
-
+        # z-direct
         if key[pygame.K_q]:
             self.z -= s
         if key[pygame.K_e]:

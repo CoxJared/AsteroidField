@@ -3,15 +3,18 @@ import math
 
 class Camera:
     def __init__(self, position = (0,0,0), rotation = (0,0)):
-        self. position = list(position)
+        self.x = position[0]
+        self.y = position[1]
+        self.z = position[2]
         self.rotation = list(rotation)
 
-    def events(self, event):
-        if event.type == pygame.MOUSEMOTION:
-            x, y = event.rel
-            x /= 200
-            y /= 200
-            self.rotation[0] += y
-            self.rotation[1] += x
+    def update(self, ship):
+        dx = ((self.x) - (ship.x - 6) ) / 10
+        dy = ((self.y) - (ship.y - 0)) / 10
+        dz = ((self.z) - (ship.z + 3)) / 10
+        self.x -= dx
+        self.y -= dy
+        self.z -= dz
+
 
 
