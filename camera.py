@@ -9,9 +9,10 @@ class Camera:
         self.rotation = list(rotation)
 
     def update(self, ship):
-        dx = ((self.x) - (ship.x - 6) ) / 10
-        dy = ((self.y) - (ship.y - 0)) / 10
-        dz = ((self.z) - (ship.z + 3)) / 10
+        #Delays tracking, shows the movement
+        dx = ((self.x) - (ship.x - 6) ) / 5
+        dy = ((self.y) - (ship.y - 0)) / 5
+        dz = ((self.z) - (ship.z + 3)) / 5
         self.x -= dx
         self.y -= dy
         self.z -= dz
