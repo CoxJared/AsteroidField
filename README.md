@@ -1,5 +1,7 @@
 Asteroid Field
 
+![Alt text](/screenshot.jpg?raw=true "Optional Title")
+
 Status: incomplete
 
 Overview: navigate an Asteroid Field, dodge or shoot/destroy asteroid and survive as long as possible
